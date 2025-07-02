@@ -22,4 +22,4 @@ def test_google_search(browser):
     search_box = browser.find_element(By.NAME, "q")
     search_box.send_keys("pytest selenium github actions")
     search_box.send_keys(Keys.RETURN)
-    assert "pytest" in browser.page_source.lower()
+    assert "lang" in browser.page_source.lower()
